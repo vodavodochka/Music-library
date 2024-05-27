@@ -5,111 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script src="AudioPlayer.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="https://kit.fontawesome.com/0228e05e1a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <title>Library</title>
 </head>
 <body>
-    <section class="hero is-dark is-medium">
-        <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <i class="fas fa-headphones-alt "></i>
-                </a>
-              </div>
-              <div class="navbar-menu">
-                <div class="navbar-end">
-                  <a class="navbar-item" href="index.html"> Home </a>
-                  <a class="navbar-item is-active" href="MusicLibrary.html"> Music Library </a>
-                  <a class="navbar-item" href="contacts.html"> Contact us </a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </section>
+  <div data-include-html="header.html"></div>
       <section class = "container is-fullhd section">
         <div class="notification is-dark">
             Здесь хранится музыка, созданная <strong>искуственным интелектом</strong>. Эту музыку мы создавали с помощью нейросетей, некоторые полностью, а для некоторых только инструментальную часть. Эта библиотека показывает насколько искуственный интелект продвинут в текущее время, он может не только писать тексты, но и музыку.
         </div>
-    <section>
-        <div>
-            <div class="grid is-gap-4 is-col-min-12">
-              <div class="card">
-                <div class="card-image has-padding">
-                    <figure>
-                        <img class="song-image" src = "Images/image_ac99fba4-6c41-403e-a848-c23c184a1d00.png"/>
-                    </figure>
-                    <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
-                      <div class="audio-player is-flex is-align-items-center">
-                        <audio src="Music/Necropolis_PoE.mp3" class="AudioFile"></audio>
-                        <i class="fas fa-play play-pause-button"></i>
-                        <div class="time-container">0:00 / 0:00</div>
-                        <div class = "bar-container">
-                          <input type="range" min="0" max="100" value="0" step="1" class="progress-bar">
-                          <input type="range" min="0" max="100" value="100" step="1" class="volume-bar">
-                          <i class="fas fa-volume-up"></i>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4">By Vodavodochka</p>
-                        <p class="subtitle is-6">@vodavodochka</p>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <time datetime="2024-2-23">23 Feb 2024</time>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-image has-padding">
-                    <figure>
-                        <img class="song-image" src = "Images/image_20043ea1-4e65-4c12-86ee-89080aa33286.png"/>
-                    </figure>
-                    <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
-                      <div class="audio-player is-flex is-align-items-center">
-                        <audio src="Music/5ced9bc4607fb3ee (1).mp3" class="AudioFile"></audio>
-                        <i class="fas fa-play play-pause-button"></i>
-                        <div class="time-container">0:00 / 0:00</div>
-                        <div class = "bar-container">
-                          <input type="range" min="0" max="100" value="0" step="1" class="progress-bar">
-                          <input type="range" min="0" max="100" value="100" step="1" class="volume-bar">
-                          <i class="fas fa-volume-up"></i>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4">By Vodavodochka</p>
-                        <p class="subtitle is-6">@vodavodochka</p>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <time datetime="2024-2-23">23 Feb 2024</time>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                  
+      <section>
+          <div>
+              <div class="grid is-gap-4 is-col-min-12">
                 <div class="card">
                   <div class="card-image has-padding">
                       <figure>
-                          <img class="song-image" src = "Images/image_b02aabd9-7f60-4668-a078-1ea4df19eee4.png"/>
+                          <img class="song-image" src = "Images/image_ac99fba4-6c41-403e-a848-c23c184a1d00.png"/>
                       </figure>
                       <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
                         <div class="audio-player is-flex is-align-items-center">
-                          <audio src="Music/65ea36ddf13b9605 (1).mp3" class="AudioFile"></audio>
+                          <audio src="Music/Necropolis_PoE.mp3" class="AudioFile"></audio>
                           <i class="fas fa-play play-pause-button"></i>
                           <div class="time-container">0:00 / 0:00</div>
                           <div class = "bar-container">
@@ -136,11 +52,11 @@
                 <div class="card">
                   <div class="card-image has-padding">
                       <figure>
-                          <img class="song-image" src = "Images/image_783ce8bf-d604-4edb-9537-15ca3cabeb74.png"/>
+                          <img class="song-image" src = "Images/image_20043ea1-4e65-4c12-86ee-89080aa33286.png"/>
                       </figure>
                       <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
                         <div class="audio-player is-flex is-align-items-center">
-                          <audio src="Music/cd1ZIQm_2.mp3" class="AudioFile"></audio>
+                          <audio src="Music/5ced9bc4607fb3ee (1).mp3" class="AudioFile"></audio>
                           <i class="fas fa-play play-pause-button"></i>
                           <div class="time-container">0:00 / 0:00</div>
                           <div class = "bar-container">
@@ -153,8 +69,8 @@
                     <div class="card-content">
                       <div class="media">
                         <div class="media-content">
-                          <p class="title is-4">By Sorox</p>
-                          <p class="subtitle is-6">@soroxres</p>
+                          <p class="title is-4">By Vodavodochka</p>
+                          <p class="subtitle is-6">@vodavodochka</p>
                         </div>
                       </div>
                       <div class="content">
@@ -163,48 +79,77 @@
                     </div>
                   </div>
                 </div>
-                
-                <div class="card">
-                  <div class="card-image has-padding">
-                    <figure>
-                      <img class="song-image" src = "Images/image_442c2b64-5ff9-4583-b31d-bb20c7f5c7e5.png"/>
-                    </figure>
-                    <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
-                      <div class="audio-player is-flex is-align-items-center">
-                        <audio src="Music/Leha.mp3" class="AudioFile"></audio>
-                        <i class="fas fa-play play-pause-button"></i>
-                        <div class="time-container">0:00 / 0:00</div>
-                        <div class = "bar-container">
-                          <input type="range" min="0" max="100" value="0" step="1" class="progress-bar">
-                          <input type="range" min="0" max="100" value="100" step="1" class="volume-bar">
-                          <i class="fas fa-volume-up"></i>
-                        </div>
+                    
+                  <div class="card">
+                    <div class="card-image has-padding">
+                        <figure>
+                            <img class="song-image" src = "Images/image_b02aabd9-7f60-4668-a078-1ea4df19eee4.png"/>
+                        </figure>
+                        <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
+                          <div class="audio-player is-flex is-align-items-center">
+                            <audio src="Music/65ea36ddf13b9605 (1).mp3" class="AudioFile"></audio>
+                            <i class="fas fa-play play-pause-button"></i>
+                            <div class="time-container">0:00 / 0:00</div>
+                            <div class = "bar-container">
+                              <input type="range" min="0" max="100" value="0" step="1" class="progress-bar">
+                              <input type="range" min="0" max="100" value="100" step="1" class="volume-bar">
+                              <i class="fas fa-volume-up"></i>
+                            </div>
+                          </div>
                       </div>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">By Sorox</p>
-                          <p class="subtitle is-6">@soroxres</p>
+                      <div class="card-content">
+                        <div class="media">
+                          <div class="media-content">
+                            <p class="title is-4">By Vodavodochka</p>
+                            <p class="subtitle is-6">@vodavodochka</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="content">
-                        <time datetime="2024-2-23">23 Feb 2024</time>
+                        <div class="content">
+                          <time datetime="2024-2-23">23 Feb 2024</time>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                
-                
-                
-                <div class="card">
-                  <div class="card-image has-padding">
+
+                  <div class="card">
+                    <div class="card-image has-padding">
+                        <figure>
+                            <img class="song-image" src = "Images/image_783ce8bf-d604-4edb-9537-15ca3cabeb74.png"/>
+                        </figure>
+                        <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
+                          <div class="audio-player is-flex is-align-items-center">
+                            <audio src="Music/cd1ZIQm_2.mp3" class="AudioFile"></audio>
+                            <i class="fas fa-play play-pause-button"></i>
+                            <div class="time-container">0:00 / 0:00</div>
+                            <div class = "bar-container">
+                              <input type="range" min="0" max="100" value="0" step="1" class="progress-bar">
+                              <input type="range" min="0" max="100" value="100" step="1" class="volume-bar">
+                              <i class="fas fa-volume-up"></i>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div class="media-content">
+                            <p class="title is-4">By Sorox</p>
+                            <p class="subtitle is-6">@soroxres</p>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <time datetime="2024-2-23">23 Feb 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-image has-padding">
                       <figure>
-                          <img class="song-image" src = "Images/image_f6c80a30-a018-4da8-a2e6-940da5a88d89.png"/>
+                        <img class="song-image" src = "Images/image_442c2b64-5ff9-4583-b31d-bb20c7f5c7e5.png"/>
                       </figure>
                       <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
                         <div class="audio-player is-flex is-align-items-center">
-                          <audio src="Music/Path_of_Exile_oynuyorum_hzl_rota_kosu_1.mp3" class="AudioFile"></audio>
+                          <audio src="Music/Leha.mp3" class="AudioFile"></audio>
                           <i class="fas fa-play play-pause-button"></i>
                           <div class="time-container">0:00 / 0:00</div>
                           <div class = "bar-container">
@@ -213,22 +158,56 @@
                             <i class="fas fa-volume-up"></i>
                           </div>
                         </div>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">By Sorox</p>
-                          <p class="subtitle is-6">@soroxres</p>
-                        </div>
                       </div>
-                      <div class="content">
-                        <time datetime="2024-2-23">23 Feb 2024</time>
+                      <div class="card-content">
+                        <div class="media">
+                          <div class="media-content">
+                            <p class="title is-4">By Sorox</p>
+                            <p class="subtitle is-6">@soroxres</p>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <time datetime="2024-2-23">23 Feb 2024</time>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                  
+                  
+                  
+                  <div class="card">
+                    <div class="card-image has-padding">
+                        <figure>
+                            <img class="song-image" src = "Images/image_f6c80a30-a018-4da8-a2e6-940da5a88d89.png"/>
+                        </figure>
+                        <div class="custom-audio-player is-flex is-justify-content-center is-align-items-center">
+                          <div class="audio-player is-flex is-align-items-center">
+                            <audio src="Music/Path_of_Exile_oynuyorum_hzl_rota_kosu_1.mp3" class="AudioFile"></audio>
+                            <i class="fas fa-play play-pause-button"></i>
+                            <div class="time-container">0:00 / 0:00</div>
+                            <div class = "bar-container">
+                              <input type="range" min="0" max="100" value="0" step="1" class="progress-bar">
+                              <input type="range" min="0" max="100" value="100" step="1" class="volume-bar">
+                              <i class="fas fa-volume-up"></i>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div class="media-content">
+                            <p class="title is-4">By Sorox</p>
+                            <p class="subtitle is-6">@soroxres</p>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <time datetime="2024-2-23">23 Feb 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <script src="includeHTML.js"></script>
 </body>
 </html>

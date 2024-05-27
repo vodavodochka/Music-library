@@ -79,3 +79,8 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+.my-container.container {
+    max-width: 700px;
+  }
+  
